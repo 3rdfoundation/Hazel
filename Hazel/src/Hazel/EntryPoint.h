@@ -11,6 +11,12 @@ int main(int argc, char** argv) {
 	printf("Hazel Engine Starting\n");
 	printf("===================================================================\n");
 
+	// TODO: This belongs somewhere else
+	Hazel::Log::Init();
+	HZ_CORE_WARN("Core logger initialized");
+	int a = 5;
+	HZ_INFO("Var a={0}",a);
+
 	// Get a handle to the external subclass of our engine
 	auto app = Hazel::CreateApplication();
 
