@@ -9,3 +9,6 @@
 #else
 	#error Hazel only supports Windows
 #endif
+
+// Shifts 1 left x number of bits
+#define BIT(x) (1 << x)

@@ -7,13 +7,13 @@ extern Hazel::Application* Hazel::CreateApplication();
 
 int main(int argc, char** argv) {
 
-	printf("===================================================================\n");
-	printf("Hazel Engine Starting\n");
-	printf("===================================================================\n");
-
-	// TODO: This belongs somewhere else
+	// TODO: Per online training, this belongs somewhere else
 	Hazel::Log::Init();
-	HZ_CORE_WARN("Core logger initialized");
+	HZ_INFO("===================================================================");
+	HZ_INFO("Hazel Engine Starting");
+	HZ_INFO("===================================================================");
+
+	// example of logging a variable
 	int a = 5;
 	HZ_INFO("Var a={0}",a);
 
